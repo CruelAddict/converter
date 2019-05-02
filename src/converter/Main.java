@@ -14,7 +14,7 @@ public class Main {
         try {
             int inputRadix = reader.nextInt();
             if (inputRadix < 1 || inputRadix > 36) {
-                throw new WrongRadixException();
+                throw new WrongRadixException("radix < 1 or radix > 36");
             }
             System.out.println("Enter the number to convert");
             String inputValue = reader.next();
